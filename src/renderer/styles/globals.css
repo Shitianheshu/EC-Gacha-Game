@@ -1,0 +1,186 @@
+@import 'tailwindcss';
+@import "tw-animate-css";
+
+@config "../../../tailwind.config.js";
+
+:root {
+    --text-50: #0b0c0e;
+    --text-100: #16181d;
+    --text-200: #2d2f39;
+    --text-300: #434756;
+    --text-400: #5a5f72;
+    --text-500: #70768f;
+    --text-600: #8d92a5;
+    --text-700: #a9adbc;
+    --text-800: #c6c8d2;
+    --text-900: #e2e4e9;
+    --text-950: #f1f1f4;
+
+    --background-50: #080b11;
+    --background-100: #101623;
+    --background-200: #202d46;
+    --background-300: #304369;
+    --background-400: #40598c;
+    --background-500: #5070af;
+    --background-600: #738cbf;
+    --background-700: #96a9cf;
+    --background-800: #b9c6df;
+    --background-900: #dce2ef;
+    --background-950: #eef1f7;
+
+    --primary-50: #0a0b10;
+    --primary-100: #131620;
+    --primary-200: #272d3f;
+    --primary-300: #3a435f;
+    --primary-400: #4e5a7e;
+    --primary-500: #61709e;
+    --primary-600: #818db1;
+    --primary-700: #a0a9c5;
+    --primary-800: #c0c6d8;
+    --primary-900: #dfe2ec;
+    --primary-950: #eff1f5;
+
+    --secondary-50: #090b11;
+    --secondary-100: #121521;
+    --secondary-200: #242a42;
+    --secondary-300: #363f63;
+    --secondary-400: #475585;
+    --secondary-500: #596aa6;
+    --secondary-600: #7a88b8;
+    --secondary-700: #9ca5c9;
+    --secondary-800: #bdc3db;
+    --secondary-900: #dee1ed;
+    --secondary-950: #eef0f6;
+
+    --accent-50: #060914;
+    --accent-100: #0c1227;
+    --accent-200: #17234f;
+    --accent-300: #233576;
+    --accent-400: #2f479d;
+    --accent-500: #3b58c4;
+    --accent-600: #627ad0;
+    --accent-700: #899bdc;
+    --accent-800: #b0bce8;
+    --accent-900: #d8def3;
+    --accent-950: #ebeef9;
+
+    --text: #121317;
+    --background: #e3e8f2;
+    --primary: #343d55;
+    --secondary: #8e9ac2;
+    --accent: #233576;
+}
+
+.dark {
+    --text-50: #f1f1f4;
+    --text-100: #e2e4e9;
+    --text-200: #c6c8d2;
+    --text-300: #a9adbc;
+    --text-400: #8d92a5;
+    --text-500: #70768f;
+    --text-600: #5a5f72;
+    --text-700: #434756;
+    --text-800: #2d2f39;
+    --text-900: #16181d;
+    --text-950: #0b0c0e;
+
+    --background-50: #eef1f7;
+    --background-100: #dce2ef;
+    --background-200: #b9c6df;
+    --background-300: #96a9cf;
+    --background-400: #738cbf;
+    --background-500: #5070af;
+    --background-600: #40598c;
+    --background-700: #304369;
+    --background-800: #202d46;
+    --background-900: #101623;
+    --background-950: #080b11;
+
+    --primary-50: #eff1f5;
+    --primary-100: #dfe3ec;
+    --primary-200: #c0c6d8;
+    --primary-300: #a0aac5;
+    --primary-400: #818eb1;
+    --primary-500: #61719e;
+    --primary-600: #4e5b7e;
+    --primary-700: #3a445f;
+    --primary-800: #272d3f;
+    --primary-900: #131720;
+    --primary-950: #0a0b10;
+
+    --secondary-50: #eef0f6;
+    --secondary-100: #dee1ed;
+    --secondary-200: #bdc4db;
+    --secondary-300: #9ca6c9;
+    --secondary-400: #7a89b8;
+    --secondary-500: #596ba6;
+    --secondary-600: #475685;
+    --secondary-700: #364063;
+    --secondary-800: #242b42;
+    --secondary-900: #121521;
+    --secondary-950: #090b11;
+
+    --accent-50: #ebeef9;
+    --accent-100: #d8def3;
+    --accent-200: #b0bce8;
+    --accent-300: #899bdc;
+    --accent-400: #627ad0;
+    --accent-500: #3b58c4;
+    --accent-600: #2f479d;
+    --accent-700: #233576;
+    --accent-800: #17234f;
+    --accent-900: #0c1227;
+    --accent-950: #060914;
+
+    --text: #e8e9ed;
+    --background: #141b2b;
+    --primary: #aab2cb;
+    --secondary: #3d4871;
+    --accent: #899bdc;
+}
+
+
+@layer utilities {
+    .scrollbar-none::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scrollbar-none {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .app-region-drag {
+        app-region: drag;
+    }
+
+    .app-region-nodrag {
+        app-region: no-drag;
+    }
+
+    .scrollbar-gutter-stable {
+        scrollbar-gutter: stable;
+    }
+
+    /*noinspection ALL*/
+    .flex-none-height {
+        flex: none;
+        height: 0%;
+    }
+}
+
+body {
+    font-family: 'Inter',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+    margin: 0;
+}
+
+* {
+    color-scheme: dark;
+}
