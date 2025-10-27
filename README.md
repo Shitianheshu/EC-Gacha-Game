@@ -1,30 +1,42 @@
-﻿<h1 align="center">
+以下は、あなたが提示した英語のREADME内容を、自然で正確かつ開発者向けにふさわしい日本語に翻訳・ローカライズしたものです。
+英語のトーンを保ちながら、日本語圏の開発者に違和感のない文体で仕上げています。
+
+---
+
+<h1 align="center">
   <p>Plugboo</p>
 </h1>
+
 <p align="center">
-  <em><b>Plugboo</b> is a <b>mod manager</b> for popular gacha games written in <a href="https://www.electronjs.org/">Electron</a> and <a href="https://react.dev/">React</a>. Making it easy to install mods and modloaders through profiles.</em>
+  <em><b>Plugboo</b> は、<a href="https://www.electronjs.org/">Electron</a> と <a href="https://react.dev/">React</a> で開発された、人気ガチャゲーム向けの <b>Modマネージャー</b> です。  
+  プロファイルを通じて、ModやModローダーのインストールを簡単に行うことができます。</em>
 </p>
 
 ---
 
-## ⚠️ **Attention**
+## ⚠️ **注意事項**
 
-Plugboo is heavily under active development. All features may not be stable and there are still missing core functionalities, so help the development by reporting occuring bugs! An official build is currently not planned and published. **GachaForge is not responsible for any consequences when using modloaders on official servers, be careful.**
+Plugboo は現在も活発に開発中です。
+すべての機能が安定しているわけではなく、一部の基本機能がまだ実装されていない場合があります。
+発生したバグの報告などで開発をサポートしていただけると幸いです。
 
----
-
-## 🎯 Features
-
-- Support for HoYoverse Games (and more to come) 
-- Easy and clean user interface for a comfortable experience
-- Installing and managing of mods inside the manager
-- Automatic installation and configuration of mod loaders for games
-- Export profiles for easy sharing
-- And more to come!
+現時点では**公式ビルドの公開予定はありません。**
+**GachaForge は、公式サーバー上で Mod ローダーを使用したことによるいかなる結果にも責任を負いません。使用の際は自己責任でご利用ください。**
 
 ---
 
-## 📽️ Screenshots
+## 🎯 特徴
+
+* HoYoverse（ホヨバース）系ゲームに対応（今後さらに対応予定）
+* シンプルかつ快適なユーザーインターフェース
+* マネージャー内での Mod のインストールおよび管理機能
+* ゲーム向け Mod ローダーの自動インストールと設定
+* プロファイルのエクスポートによる簡単な共有
+* その他、今後も新機能を追加予定！
+
+---
+
+## 📽️ スクリーンショット
 
 ![](https://i.imgur.com/Ozr34Ih.png)
 
@@ -34,25 +46,34 @@ Plugboo is heavily under active development. All features may not be stable and 
 
 ---
 
-## 💻 Development
+## 💻 開発について
 
-### Requirements
-- Node >= 20
-- EditorConfig
-- Prettier
+### 必要環境
 
-We use plugins / extensions for code consistency. Please use them when developing, we **don't** accept changes when not using these!
+* Node.js >= 20
+* EditorConfig
+* Prettier
 
-### Building
+コードの一貫性を保つために、上記のプラグイン／拡張機能を使用しています。
+これらを使用していない場合、変更を受け付けないことがありますのでご了承ください。
 
-`npm run make`
+### ビルド方法
 
-### Dev Testing
+```bash
+npm run make
+```
 
-`npm start`
+### 開発テスト
+
+```bash
+npm start
+```
 
 ---
 
-## 🧾 License
+## 🧾 ライセンス
 
-Copyright (c) 2025-present [ZickZenni](https://github.com/zickzenni). `Plugboo` is free and open-source software licensed under the [MIT License](https://github.com/zickzenni/gachaforge/blob/master/LICENSE). 
+Copyright (c) 2025-present
+[ZickZenni](https://github.com/zickzenni)
+
+`Plugboo` は [MITライセンス](https://github.com/zickzenni/gachaforge/blob/master/LICENSE) のもとで公開されている、自由かつオープンソースなソフトウェアです。
